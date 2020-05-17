@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     font-family: Georgia, Times New Roman, sans-serif;
-    
+
 }
 
 html,body{
@@ -38,8 +38,11 @@ html,body{
     top: 0;
     left: 0;
     z-index: 1;
-    transform: translateY(-100px);
+    transition: transform 0.3s ease-out;
+}
 
+.container:hover .image{
+    transform: translateY(-100px);
 }
 
 .image img{
@@ -101,5 +104,35 @@ html,body{
 
 ul li a{
     display: block;
+    height: 50px;
+    width: 50px;
+    color: #000;
+    background: #fff;
+    border-radius: 50%;
+    line-height: 50px;
+    font-size: 20px;
+    opacity: 0;
+    transform: translateY(200px);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out;
+}
 
+.container:hover ul >li >a{
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.container:hover ul >li:nth-child(2) a{
+    transition-delay: 0.1s;
+}
+
+.container:hover ul >li:nth-child(3) a{
+    transition-delay: 0.2s;
+}
+
+.container:hover ul >li:nth-child(4) a{
+    transition-delay: 0.3s;
+}
+
+.container:hover ul >li:nth-child(5) a{
+    transition-delay: 0.4s;
 }
