@@ -1,6 +1,8 @@
 *{
     margin: 0;
     padding: 0;
+    font-family: Georgia, Times New Roman, sans-serif;
+    
 }
 
 html,body{
@@ -9,6 +11,7 @@ html,body{
     place-items: center;
     text-align: center;
     background: #f2f2f2;
+
 }
 
 .container{
@@ -19,10 +22,12 @@ html,body{
     background: #fff;
     box-shadow: 0 1px 5px 0 rgba(0, 0, 0, .3);
     transition: 0.3s ease-out;
+
 }
 
 .container:hover{
     box-shadow: 0 1px 35px 0 rgba(0, 0, 0, .3);
+
 }
 
 .container .image{
@@ -34,6 +39,7 @@ html,body{
     left: 0;
     z-index: 1;
     transform: translateY(-100px);
+
 }
 
 .image img{
@@ -41,10 +47,12 @@ html,body{
     width: 100%;
     object-fit: cover;
     transition: opacity 0.3s ease-out;
+
 }
 
 .container:hover .image img{
     opacity: 0.7;
+
 }
 
 .container .content{
@@ -52,12 +60,46 @@ html,body{
     height: 100%;
     width: 100%;
     background: #fff;
-    z-index: 2;
+
 }
 
 .content .info{
     position: absolute;
     bottom: 20px;
     text-align: center;
-    
+    width: 100%;
+    line-height: 26px;
+
+}
+
+.info h2{
+    font-size: 27px;
+    margin: 3px 0;
+
+}
+
+.info span{
+    color: #1a1a1a;
+
+}
+
+.container ul{
+    display: flex;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+    list-style: none;
+
+}
+
+.container ul li{
+    margin: 0 5px;
+
+}
+
+ul li a{
+    display: block;
+
 }
